@@ -38,11 +38,15 @@ st.markdown(
     "<h1 style='text-align: center;'>SMS SPAM 💌 DETECTOR</h1>",
     unsafe_allow_html=True,
 )
+
+if "input_sms" not in st.session_state:
+    st.session_state.input_sms = ""
+
+
 # Input from user
-input_sms = st.text_input("", placeholder="Enter your SMS to check if it's spam:")
+input_sms = st.text_input("", placeholder="Enter your SMS to check if it's spam:", key="input_sms")
 
 if st.button("Analyze SMS"):
-    st.session_state["input_sms"] = ""
     if not input_sms.strip():
         st.warning("Please enter an SMS before analyzing!")
     else:
