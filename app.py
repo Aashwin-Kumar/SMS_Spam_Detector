@@ -40,21 +40,9 @@ st.markdown(
 )
 
 
-# Ensure session state has a place for input_sms
-if "input_sms" not in st.session_state:
-    st.session_state.input_sms = ""
+# Input from user
+input_sms = st.text_input("", placeholder="Enter your SMS to check if it's spam:")
 
-# Function to reset the input_sms state
-def reset_input():
-    st.session_state.input_sms = ""
-
-# Use st.empty() to allow dynamic updating
-input_box = st.empty()
-
-# Render the input box, tied to session state
-input_sms = input_box.text_input("", placeholder="Enter your SMS to check if it's spam:", key="input_sms")
-
-# Button to analyze SMS
 if st.button("Analyze SMS"):
     if not input_sms.strip():
         st.warning("Please enter an SMS before analyzing!")
@@ -68,7 +56,3 @@ if st.button("Analyze SMS"):
             st.header("✔️ This SMS is NOT Spam!")
         else:
             st.header("⚠️ Warning: This SMS is Spam!")
-
-        # Clear the input box after processing
-        reset_input()
-        input_box.text_input("", placeholder="Enter your SMS to check if it's spam:", key="new_input")
