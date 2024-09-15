@@ -39,7 +39,8 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-if "input_sms" not in st.session_state:
+
+def reset_input():
     st.session_state.input_sms = ""
 
 
@@ -61,4 +62,5 @@ if st.button("Analyze SMS"):
             st.header("✔️ This SMS is NOT Spam!")
         else:
             st.header("⚠️ Warning: This SMS is Spam!")
-    st.session_state.input_sms = ""
+
+    reset_input()
