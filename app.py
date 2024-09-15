@@ -42,6 +42,7 @@ st.markdown(
 input_sms = st.text_input("", placeholder="Enter your SMS to check if it's spam:")
 
 if st.button("Analyze SMS"):
+    st.session_state["input_sms"] = ""
     if not input_sms.strip():
         st.warning("Please enter an SMS before analyzing!")
     else:
