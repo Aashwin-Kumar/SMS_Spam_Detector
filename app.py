@@ -44,7 +44,9 @@ if "input_sms" not in st.session_state:
 
 
 # Input from user
-input_sms = st.text_input("", placeholder="Enter your SMS to check if it's spam:", key="input_sms")
+input_sms = st.text_input(
+    "", placeholder="Enter your SMS to check if it's spam:", key="input_sms"
+)
 
 if st.button("Analyze SMS"):
     if not input_sms.strip():
@@ -59,3 +61,4 @@ if st.button("Analyze SMS"):
             st.header("✔️ This SMS is NOT Spam!")
         else:
             st.header("⚠️ Warning: This SMS is Spam!")
+    st.session_state.input_sms = ""
