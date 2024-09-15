@@ -39,7 +39,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 # Input from user
-input_sms = st.text_input("Enter your SMS to check if it's spam:")
+input_sms = st.text_input(placeholder="Enter your SMS to check if it's spam:")
 
 if st.button("Analyze SMS"):
     if not input_sms.strip():
