@@ -40,6 +40,9 @@ st.markdown(
 )
 
 
+if "input_sms" not in st.session_state:
+    st.session_state.input_sms = ""
+
 def reset_input():
     st.session_state.input_sms = ""
 
