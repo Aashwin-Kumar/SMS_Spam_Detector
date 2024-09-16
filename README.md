@@ -77,10 +77,13 @@ pip install -r requirements.txt
 
 ## Contributing
 
-If you’d like to contribute to this project, please fork the repository and submit a pull request with your changes. We welcome any improvements or suggestions!
+If you’d like to contribute to this project, please fork the repository and submit a pull request with your changes. i welcome any improvements or suggestions!
 
 ## Acknowledgements
 
 - Thanks to the Streamlit community for their support and resources.
 - Special thanks to the authors of the machine learning algorithms used in this project.
 - Special thanks to Nitish bhai!!
+
+
+Thank You 😊❣️
