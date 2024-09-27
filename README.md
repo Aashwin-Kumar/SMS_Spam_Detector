@@ -5,7 +5,7 @@
 Welcome to the SMS Spam Prediction App! This is a data science project built with Streamlit that uses machine learning to predict whether an SMS message is spam or not. It’s designed to help users filter out unwanted messages and improve communication efficiency.
 
 Did you know that **47% of consumers stop purchasing from a brand after losing trust in its digital security**, and **84% would consider switching to another brand** if that trust is lost? [ref](https://www.digicert.com/news/digicert-survey-highlights-importance-of-digital-trust-in-business-outcomes-customer-loyalty) Issues like SMS spam or unauthorized messages can damage this trust and lead to higher customer churn. 
-If you're an email or SMS marketer, this app can help you check whether the message you've designed to engage your customers could be considered spam before sending it out—helping you protect your brand's reputation and customer trust.
+If you're an email or SMS marketer, this app can help you check whether the message you've designed to engage your customers could be considered spam before sending it out helping you protect your brand's reputation and customer trust.
 
 ## Problem It Solves
 
